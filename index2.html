@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid-19 Tracker</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body
+            {
+                background: black;
+            }
+
+            .container
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                height: 300px;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 50%;
+                box-shadow: 0 0 50px 20px #FFF;
+                overflow: inherit;
+                background-color: #FEFEFE;
+
+                animation-name: box-light;
+                animation-duration: 2s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            p
+            {
+                font-size: 15px;
+                line-height: 0.8;
+                background: url('dance.gif');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                font-weight: bold;
+                filter: brightness(10%);
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .brand
+            {
+                position: absolute;
+                right: -20%;
+                bottom: 2%;
+                z-index: 999;
+                font-family: 'Pacifico', cursive;
+                font-weight: lighter;
+                font-size: 3em;
+                color: white;
+                transform: rotate(-15deg);
+                text-shadow: 5px 5px 10px green;
+                animation-name: text-light;
+                animation-duration: 2s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes text-light {
+                0%, 100% {
+                    text-shadow: 5px 5px 10px red;
+                }  
+                
+                25%{
+                    text-shadow: 0 0 1px black;
+                }
+
+                50%{
+                    text-shadow: 5px 5px 10px blue;
+                }
+
+                75%{
+                    text-shadow: 0 0 1px black;
+                }
+            }
+
+            @keyframes box-light {
+                0%, 100% {
+                    box-shadow: 0 0 30px 10px blue;
+                    border: 1px solid blue;
+                    background-color: blue;
+                }  
+
+                25%{
+                    box-shadow: 0 0 30px 20px black;
+                }
+
+                50%{
+                    box-shadow: 0 0 30px 10px red;
+                    border: 1px solid red;
+                    background-color: red;
+                }
+                
+                75%{
+                    box-shadow: 0 0 30px 20px black;
+                }
+
+                /* 75%{
+                    text-shadow: 5px 5px 10px yellow;
+                } */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>
+                Bless 'em when there ain't no stress
+                this one is straight For di girl 'em
+                Enrique Iglesias longside Gente de Zona
+                Get di girl them in a di zone
+                Dem a big man, Sean a Paul let me there yeah
+                What me tell 'em 'pon the zone
+                Like it just like that
+                Di girl 'em move 'pon track
+                Sean a Paul let me there yeah
+                Enrique, sing for dem
+                You look at me And girl you take me to another place
+                Got me feeling like I'm flying, like I'm outer space
+                Something 'bout your body says 'come and take me'
+                Got me begging, got me hoping that the night don't stop
+                Bailando, bailando, bailando, bailando
+                Tu cuerpo y el mio llenando el vacío
+                Subiendo y bajando (subiendo y bajando)
+                (Bailando, bailando, bailando, bailando
+                Ese fuego por dentro me está enloqueciendo, me va saturando
+            </p>
+            <label class="brand">The Dance Club</label>
+        </div>
+        
+    </body>
+</html>
