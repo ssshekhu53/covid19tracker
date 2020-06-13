@@ -1,0 +1,53 @@
+.loader i
+{
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader
+{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-90deg);
+    }
+
+    50%{
+        transform: rotate(-180deg);
+    }
+
+    75%{
+        transform: rotate(-270deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.loader
+{
+    position: absolute; 
+    z-index: 9999; 
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-list select
+{
+    width: 25%;
+}
+
+@media only screen and (max-width: 763px)
+{
+    .country-list select
+    {
+        width: 100%;
+    }
+}
