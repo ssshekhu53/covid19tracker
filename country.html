@@ -2,18 +2,29 @@
 <html lang="en">
 
 <head>
-  <title>Covid-19 Tracker</title>
+  <title>Country | Covid-19 Tracker</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <meta name="author" content="Shashank Shekhar" />
-        <meta name="author" content="https://www.linkedin.com/in/shashank-shekhar-849645166" />
-        <meta name="description" content="Covid-19 Tracker" />
-        <meta name="theme-color" content="green" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <meta name="author" content="https://www.linkedin.com/in/shashank-shekhar-849645166" />
+  <meta name="description" content="Covid-19 Tracker" />
+  <meta name="theme-color" content="green" />
+
+  <link rel="icon" type="img/png" href="assets/img/logo.png" />
+
+  <meta property="og:title" content="Covid-19 Tracker" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="<?php echo $url; ?>ecommerce/assets/img/logo.png" />
+  <meta property="og:width" content="100" />
+  <meta property="og:height" content="100" />
+  <meta property="og:description" content="Covid 19 tracker, an application that tracks number of Covid-19 patients across the world. It shows infected, recovered and number of deceased." />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
@@ -25,17 +36,12 @@
 <body>
   <div class="wrapper ">
     <div class="sidebar" data-color="danger" data-background-color="danger" data-image="assets/img/sidebar-1.jpg">
-      <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-      Tip 2: you can also add an image using data-image tag
-  -->
       <div class="logo">
-        <!-- <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
-        </a> -->
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Covid-19 Tracker
+        <a href="." class="simple-text logo-mini">
+          <img src="assets/img/logo.png" />
+        </a>
+        <a href="." class="simple-text logo-normal">
+          <b>Covid-19 Tracker</b>
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -43,24 +49,23 @@
           <li class="nav-item">
             <a class="nav-link" href=".">
               <i class="material-icons">dashboard</i>
-              <p>Home</p>
+              <p><b>Home</b></p>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="worldwide.html">
               <i class="material-icons">public</i>
-              <p>Worlwide</p>
+              <p><b>Worlwide</b></p>
             </a>
           </li>
 
           <li class="nav-item active">
             <a class="nav-link" href="country.html">
               <i class="material-icons">flag</i>
-              <p>Country Wise</p>
+              <p><b>Country Wise</b></p>
             </a>
           </li>
-          <!-- your sidebar here -->
         </ul>
       </div>
     </div>
@@ -79,12 +84,7 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="javascript:;">
-                  <i class="material-icons">notifications</i> Notifications
-                </a>
-              </li> -->
-              <!-- your navbar here -->
+
             </ul>
           </div>
         </div>
@@ -96,7 +96,6 @@
           <i class="material-icons" style="font-size: 20em;">loop</i>
         </div>
         <div class="container-fluid h-100" id="content">
-          <!-- your content here -->
         <div class="country-list text-right">
             <select class="custom-select">
                 <option value="">Country</option>
@@ -123,7 +122,6 @@
            Developed By
             <a href="https://www.linkedin.com/in/shashank-shekhar-849645166" target="_blank">Shashank Shekhar</a>.
           </div>
-          <!-- your footer here -->
         </div>
       </footer>
     </div>
