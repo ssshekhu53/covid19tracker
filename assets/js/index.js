@@ -12,7 +12,7 @@ return num_parts.join(".");
 
 $(document).ready(function(){
     $('#content').load('dashboard.html', function(){
-        $('.country-name').text('Woldwide');
+        $('.country-name').text('India');
         $.getJSON('https://covid19.mathdro.id/api/countries/India', function(data){
             stats=data;
             var date = new Date(data['lastUpdate']);
