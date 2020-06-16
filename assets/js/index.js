@@ -29,7 +29,6 @@ $(document).ready(function(){
                     var province, confirmed, recovered, deaths, active;
                     province=confirmed=recovered=deaths=active=null;
                     $.each(data, function(){
-                        console.log(data);
                         $.each(this, function(key, value){
                         if(key=='provinceState')
                             province=value;
