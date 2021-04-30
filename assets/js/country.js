@@ -35,7 +35,7 @@ $(document).on('change', '.country-list select', function(){
     if(option.length!=0)
     {
         $.getJSON('https://covid19.mathdro.id/api/countries/'+option, function(data){
-            $('.main-content').load('country_dashboard.html', function(){
+            $('.main-content').load('dashboards/country_dashboard.html', function(){
                 $('.country-name').html(country);
                 var date = new Date(data['lastUpdate']);
 

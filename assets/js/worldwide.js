@@ -11,7 +11,7 @@ return num_parts.join(".");
 }
 
 $(document).ready(function(){
-    $('#content').load('worldwide_dashboard.html', function(){
+    $('#content').load('dashboards/worldwide_dashboard.html', function(){
         $('.country-name').text('Woldwide');
         $.getJSON('https://covid19.mathdro.id/api/', function(data){
             stats=data;

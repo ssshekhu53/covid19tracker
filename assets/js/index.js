@@ -11,7 +11,7 @@ return num_parts.join(".");
 }
 
 $(document).ready(function(){
-    $('#content').load('dashboard.html', function(){
+    $('#content').load('dashboards/dashboard.html', function(){
         $('.country-name').text('India');
         $.getJSON('https://covid19.mathdro.id/api/countries/India', function(data){
             stats=data;
@@ -29,6 +29,7 @@ $(document).ready(function(){
                     var province, confirmed, recovered, deaths, active;
                     province=confirmed=recovered=deaths=active=null;
                     $.each(data, function(){
+                        console.log(data);
                         $.each(this, function(key, value){
                         if(key=='provinceState')
                             province=value;
